@@ -1,0 +1,8 @@
+<app-task-input [listOfTasks]="listOfTasks"></app-task-input>
+<div class="taskList" *ngFor="let item of listOfTasks">
+    <div class="singleTask">
+      <input type="checkbox" class="circleCheck"/>
+      {{item.name}}
+      <button class="material-symbols-outlined removeButton" (click)="removeTask(item.id)">delete</button>
+    </div>
+</div>
