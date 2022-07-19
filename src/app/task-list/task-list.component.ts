@@ -14,7 +14,10 @@ export class TaskListComponent implements OnInit {
   }
 
   removeTask(id: number) {
-    this.listOfTasks=this.listOfTasks.filter(item=>item.id!==id);
+    for (let i = 0; i < this.listOfTasks.length; i++) {
+      if (this.listOfTasks[i].id == id) {
+        this.listOfTasks.splice(i, 1);
+      }
+    }
   }
-
 }

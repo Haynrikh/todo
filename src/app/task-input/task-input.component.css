@@ -24,5 +24,11 @@
     max-width: 500px;
     width: 100%;
     height: 50px;
-    border: 5px, black, solid , 5px;
+    border: 1px, black, solid;
+}
+
+.addTaskInput:focus {
+    outline: none;
+    border: 1px solid green;
+    background-clip: padding-box;
 }

@@ -15,7 +15,7 @@ export class TaskInputComponent implements OnInit {
   }
 
   addTasks(task: string): void {
-    this.listOfTasks.push({id: this.listOfTasks.length+1, name: task});
+    this.listOfTasks.push({id: Math.floor(Math.random() * 1000), name: task});
   }
 
 }
